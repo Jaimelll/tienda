@@ -9,6 +9,9 @@
 #
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
+Spree::Frontend::Config[:locale] = 'es'
+Spree::Backend::Config[:locale] = 'es'
+
 Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
