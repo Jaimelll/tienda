@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
-gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
+#gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
