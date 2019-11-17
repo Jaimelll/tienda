@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
