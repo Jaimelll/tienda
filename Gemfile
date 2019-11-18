@@ -5,7 +5,7 @@ ruby '2.4.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
-
+gem 'pg', '~> 0.18.2'
 # Use sqlite3 as the database for Active Record
 
 # Use Puma as the app server
@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
+#gem 'spree_one_page_stock_management', github: 'vinsol-spree_contrib/one_page_stock_management'
+#gem 'delayed-job-active-record'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -43,15 +45,16 @@ gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'sqlite3'
+  
 end
 
+
 group :development do
-  gem 'sqlite3'
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+ 
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -61,17 +64,17 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'pg', '~> 0.18.2'
+ 
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
 group :production do
-  gem 'pg', '~> 0.18.2'
+  
   gem 'rails_12factor', '~> 0.0.3'
 end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
